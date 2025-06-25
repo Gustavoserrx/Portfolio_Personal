@@ -121,9 +121,11 @@ const swiper3 = new Swiper(".mySwiper3", {
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
-  pagination: {
-    el: ".projects-section3 .swiper-pagination",
-    clickable: true,
+  allowTouchMove: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
