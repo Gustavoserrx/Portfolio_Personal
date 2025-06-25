@@ -106,15 +106,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 const swiper3 = new Swiper(".mySwiper3", {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
   loop: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
+  slidesPerView: 'auto',
+  coverflowEffect: {
+    rotate: 30,
+    stretch: 0,
+    depth: 200,
+    modifier: 1.5,
+    slideShadows: true,
+  },
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".projects-section3 .swiper-pagination",
     clickable: true,
   },
 });
