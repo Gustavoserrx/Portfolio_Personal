@@ -449,3 +449,172 @@ section {
 .mySwiper2 {
   width: 100%;
 }
+@media (max-width: 480px) {
+  .hero {
+    height: auto;
+    padding: 60px 20px 40px;
+    flex-direction: column;
+  }
+
+  .animated-text {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .about img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .text-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .Stack h2 {
+    font-size: 1.2rem;
+  }
+
+  .stack-container.grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+  }
+
+  .project-info h3 {
+    font-size: 1.1rem;
+  }
+
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .project-info ul li {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .project-info a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .swiper-slide img {
+    max-height: 200px;
+  }
+
+  .btn-cv {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .header {
+    padding: 0.5rem 1rem;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-links {
+    position: static;
+    transform: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .socials {
+    position: static;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 80px 40px 60px;
+  }
+
+  .animated-text {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .about img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .text-content h2,
+  .Stack h2 {
+    font-size: 1.4rem;
+  }
+
+  .stack-container.grid {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
+  }
+
+  .project-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-info p {
+    font-size: 1rem;
+  }
+
+  .project-info ul li {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  .project-info a {
+    font-size: 0.95rem;
+    padding: 7px 14px;
+  }
+
+  .swiper-slide img {
+    max-height: 300px;
+  }
+
+  .btn-cv {
+    padding: 0.75rem 2rem;
+    font-size: 1.05rem;
+  }
+
+  .header {
+    padding: 1rem 2rem;
+    flex-direction: row;
+    height: auto;
+  }
+
+  .logo,
+  .socials {
+    position: relative;
+  }
+
+  .nav-links {
+    position: relative;
+    transform: none;
+    flex-direction: row;
+  }
+}
