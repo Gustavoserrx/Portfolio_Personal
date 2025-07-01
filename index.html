@@ -20,9 +20,97 @@
   margin-right: auto;
   text-align: center;
 }
+.hero-section {
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem; /* separa de la siguiente sección */
+}
 </style>
 </head>
 <body>
+<!-- Fondo animado SVG estilo Apple minimalista -->
+<div class="background-paths">
+  <svg viewBox="0 0 1200 300" preserveAspectRatio="none">
+    <defs>
+      <!-- Gradiente morado-azul animado -->
+      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#ff00cc">
+          <animate attributeName="stop-color" values="#ff00cc;#3333ff;#ff00cc" dur="10s" repeatCount="indefinite" />
+        </stop>
+        <stop offset="100%" stop-color="#3333ff">
+          <animate attributeName="stop-color" values="#3333ff;#ff00cc;#3333ff" dur="10s" repeatCount="indefinite" />
+        </stop>
+      </linearGradient>
+    </defs>
+
+    <!-- Path 1 -->
+    <path d="M0 150 Q 300 50 600 150 T 1200 150"
+      stroke="url(#gradient1)"
+      stroke-width="2"
+      fill="none"
+      opacity="0.3">
+      <animate attributeName="d"
+        dur="8s"
+        repeatCount="indefinite"
+        values="
+          M0 150 Q 300 50 600 150 T 1200 150;
+          M0 150 Q 300 200 600 150 T 1200 150;
+          M0 150 Q 300 50 600 150 T 1200 150"
+      />
+    </path>
+
+    <!-- Path 2 -->
+    <path d="M0 180 Q 350 100 600 180 T 1200 180"
+      stroke="url(#gradient1)"
+      stroke-width="2"
+      fill="none"
+      opacity="0.25">
+      <animate attributeName="d"
+        dur="10s"
+        repeatCount="indefinite"
+        values="
+          M0 180 Q 350 100 600 180 T 1200 180;
+          M0 180 Q 350 230 600 180 T 1200 180;
+          M0 180 Q 350 100 600 180 T 1200 180"
+      />
+    </path>
+
+    <!-- Path 3 -->
+    <path d="M0 130 Q 250 70 600 130 T 1200 130"
+      stroke="url(#gradient1)"
+      stroke-width="2"
+      fill="none"
+      opacity="0.2">
+      <animate attributeName="d"
+        dur="12s"
+        repeatCount="indefinite"
+        values="
+          M0 130 Q 250 70 600 130 T 1200 130;
+          M0 130 Q 250 180 600 130 T 1200 130;
+          M0 130 Q 250 70 600 130 T 1200 130"
+      />
+    </path>
+
+    <!-- Path 4 -->
+    <path d="M0 210 Q 400 140 600 210 T 1200 210"
+      stroke="url(#gradient1)"
+      stroke-width="1.5"
+      fill="none"
+      opacity="0.15">
+      <animate attributeName="d"
+        dur="14s"
+        repeatCount="indefinite"
+        values="
+          M0 210 Q 400 140 600 210 T 1200 210;
+          M0 210 Q 400 250 600 210 T 1200 210;
+          M0 210 Q 400 140 600 210 T 1200 210"
+      />
+    </path>
+
+  </svg>
+</div>
   <header class="header">
     <nav class="navbar">
       <ul class="nav-links">
@@ -39,7 +127,7 @@
     </div>
     </nav>
   </header>
-  <main class="hero">
+  <main class="hero hero-section">
     <h1 class="animated-text">Doy vida a tus ideas.</h1>
   </main>
 
